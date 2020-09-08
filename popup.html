@@ -56,12 +56,12 @@
         }
 
         .logo {
-            padding: 16px;
+            padding: 10px;
         }
 
         .logo-icon {
             vertical-align: text-bottom;
-            margin-right: 12px;
+            margin-right: 10px;
         }
 
         .version {
@@ -78,7 +78,7 @@
         .flex {
             opacity: 1;
             transition: opacity 0.2s ease-in-out;
-            width: 120px;
+            width: 24px;
         }
 
             .flex:hover {
@@ -89,6 +89,24 @@
                 font-size: 40px;
                 color: #2f5876;
             }
+
+        .flex1 {
+            opacity: 1;
+            transition: opacity 0.2s ease-in-out;
+            width: 24px;
+        }
+
+
+        .flex1:hover{
+            opacity: 0.4;
+        }
+
+        .flex1 .fa {
+            font-size: 40px;
+            color: #2f5876;
+            margin-left:-1050%;
+        }
+  
     </style>
 </head>
 
@@ -105,12 +123,25 @@
     <div class="modal-icons">
         <div class="flex-container">
             <div class="flex">
+                <!--Random doujin-->
                 <a href="https://nhentai.net/" id="mylink" target="_blank">
                     <i class="fa fa-globe" style="color:darksalmon "></i>
                 </a>
             </div>
+            <div class="flex1">
+                <!--Random manga-->
+                <a href="https://mangadex.org/manga" id="mySecondlink" target="_blank">
+                    <i class="fa fa-book" style="color:blue"></i>
+                </a>
+            </div>
+            
         </div>
     </div>
+    <p>
+        Globe is for NHentai<br />
+        Book is for Mangadex
+    </p>
+
     <script src ="popup.js"></script>
 </body>
 </html>
